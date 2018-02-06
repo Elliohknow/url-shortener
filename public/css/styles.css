@@ -1,15 +1,23 @@
-body {
+* {
   text-align: center;
   color: #ffffff;
-  background-color: #043447
+  background-color: #043447;
+  padding: 20px;
 }
-div.header {
+.header {
   color:#ffffff;
+  padding: 20px;
 }
 div.header h4 a {
   color: #78c0a8;
   text-decoration: #78c0a8;
+  padding: 0%;
 }
 div.header h5 {
   color: #ffffff;
+  margin-bottom: 0%;
+}
+section input {
+  padding: 2px;
+  padding-bottom: 6px;
 }
