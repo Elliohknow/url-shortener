@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="urlShortenerApp">
+<head>
+  <meta charset="utf-8">
+  
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  
+</head>
+<body>
+  <div class="header">
+    <h3>URL Shortener Microservice</h3>
+    <h4><a href="https://www.freecodecamp.com" target="blank">Free Code Camp</a> Backend Certification Project</h4>
+    <h5>Technologies: Node, Angular, Express, MongoDB, Mongoose, JavaScript, HTML, CSS</h5>
+  </div>
+  <section ng-controller="urlshortenerAppCtrl">
+    {{urlToShorten}}
+    <input type="text" placeholder="Enter URL" ng-model="urlToShorten">
+    <a ng-href="/new/{{urlToShorten}}"><input placeholder="Get it" type="submit" placeholder="Get it"></a>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js" integrity="sha256-IMA0EIgLE53aSU7jFyLtX6u4hqMZ6AeSxlSgiBQ+620=" crossorigin="anonymous"></script>  
+  <script src="/js/app.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

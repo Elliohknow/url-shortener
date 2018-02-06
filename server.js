@@ -8,11 +8,15 @@ var port = process.env.PORT || 3000;
 var app = express();
 app.use(bodyParser.json());
 app.use(cors());
-
+// allows node to find static content
+app.use(express.static(__dirname + '/public'));
 // create the database entry
-app.get('/new/:url-to-shorten', (req, res, next) => {
-  
+app.get('/new/:urlToShorten(*)', (req, res, next) => {
+  // ES5 -> var urlToShorten = req.params.urlToShorten;
+  var {urlToShorten} = req.params;
+  return res.json({urlToShorten});
 });
+
 
 
 app.listen(port, () => {

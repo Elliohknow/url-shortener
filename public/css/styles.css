@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+  color: #ffffff;
+  background-color: #043447
+}
+div.header {
+  color:#ffffff;
+}
+div.header h4 a {
+  color: #78c0a8;
+  text-decoration: #78c0a8;
+}
+div.header h5 {
+  color: #ffffff;
+}
